@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Richard's Rossi photo gallery, showcase of creative work and photography">
+    <meta name="keywords" content="Richard Rossi, photographer portfolio, photography, creative photography, portfolio website, professional photographer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Richard Rossi | Fine Arts</title>
+</head>
+
+<body>
+    <header>
+        <h1>Richard Rossi Fine Arts</h1>
+        <div class="hamburger" role="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul id="navbar">
+                <li><a href="#home" aria-label="Go to home section">HOME</a></li>
+                <li><a href="#about" aria-label="Learn more about Richard Rossi">ABOUT</a></li>
+                <li><a href="#gallery" aria-label="View the photography gallery">GALLERY</a></li>
+                <li><a href="#clients" aria-label="Read testimonials from clients">CLIENTS</a></li>
+                <li><a href="#contacts" aria-label="Get in touch with Richard Rossi">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home" aria-labelledby="home-title">
+            <h2 id="home-title">Photography that speaks to the Soul</h2>
+            <a href="#gallery" class="explore button" aria-label="Explore the works">Explore the Works</a>
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="about-text">
+                <h2 id="about-title">About</h2>
+                <p>
+                    <strong>About Richard Rossi</strong><br>
+                    Richard Rossi, a 49-year-old photographer from Bologna, Italy, is renowned for his work in fine arts, fashion, and new Renaissance photography.
+                    With a background from the Florence Academy of Fine Arts, he combines classical aesthetics with modern creativity in his imagery. Rossi’s work
+                    is celebrated for its meticulous attention to detail, striking lighting, and evocative storytelling.
+                    His photography has been featured in top publications, and he has collaborated with leading figures in the fashion and luxury industries.
+                    Through his lens, Rossi explores timeless themes of beauty, transformation, and the human experience, leaving a lasting impact
+                    on contemporary visual art.
+                </p>
+            </div>
+            <img src="Images/Richard_Rossi_self_portrait.jpg" class="portrait" alt="Self-portrait of Richard Rossi">
+        </section>
+
+        <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+            <h2 id="gallery-title">Gallery</h2>
+            <div class="filters" role="group" aria-labelledby="filter-group">
+                <h3 id="filter-group">Filter Images</h3>
+                <button class="filter-button" data-filter="all" aria-label="Show all images">All images</button>
+                <button class="filter-button" data-filter="fashion" aria-label="Show fashion images">Fashion</button>
+                <button class="filter-button" data-filter="portrait" aria-label="Show portrait images">Portrait</button>
+                <button class="filter-button" data-filter="art" aria-label="Show fine art images">Fine art</button>
+            </div>
+            <div class="gallery-images">
+                <figure class="fashion">
+                    <img src="Images/gallery_image_1.jpg" alt="Young girl in orange outfit, symbolizing strength">
+                    <figcaption>Feeling fiery, 2020</figcaption>
+                </figure>
+                <figure class="fashion">
+                    <img src="Images/gallery_image_2.jpg" alt="Group of young models posing for a photo">
+                    <figcaption>What's up?, 1988</figcaption>
+                </figure>
+                <figure class="portrait">
+                    <img src="Images/gallery_image_3.jpg" alt="Abstract portrait symbolizing chaotic thoughts">
+                    <figcaption>Intrusive Thoughts, 1990</figcaption>
+                </figure>
+                <figure class="art">
+                    <img src="Images/gallery_image_4.jpg" alt="Artistic composition of a skull symbolizing human mortality">
+                    <figcaption>Inside of Us, 1990</figcaption>
+                </figure>
+                <figure class="portrait">
+                    <img src="Images/gallery_image_5.jpg" alt="Young man with delicate features, capturing a serene expression">
+                    <figcaption>Dorian Gray, 2011</figcaption>
+                </figure>
+                <figure class="art">
+                    <img src="Images/gallery_image_6.jpg" alt="Artistic photograph of a small feast with vibrant colors">
+                    <figcaption>A Lovely Feast, 1993</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="testimonials" id="clients" aria-labelledby="clients-title">
+            <h2 id="clients-title">Clients</h2>
+            <article class="testimonial-box" aria-labelledby="testimonial-1">
+                <h3 id="testimonial-1">Photoshoot in Paris</h3>
+                <img src="Images/client_1.jpg" alt="Ann Manning - Model at Zara">
+                <p><span>Ann Manning</span>, Model at Zara</p>
+                <p>Working with Richard Rossi was an absolute dream. His creative vision and attention to detail made the entire photoshoot feel like a work of art...</p>
+            </article>
+
+            <article class="testimonial-box" aria-labelledby="testimonial-2">
+                <h3 id="testimonial-2">Collaboration in Barcelona</h3>
+                <img src="Images/client_2.jpg" alt="Lucas Rodrigues - Avant-garde designer">
+                <p><span>Lucas Rodrigues</span>, Avant-garde designer</p>
+                <p>Collaborating with Richard Rossi was an extraordinary experience. His artistic approach and mastery of lighting added a whole new dimension to my work.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="contacts" id="contacts">
+        <h2>Contacts</h2>
+        <h3>Richard Rossi</h3>
+        <p>Email: <a href="mailto:richard@rossiphotography.com" aria-label="Send an email to Richard Rossi"><i>richard@rossiphotography.com</i></a></p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <h2 id="contact-form-heading">Contact Form</h2>
+        <form aria-labelledby="contact-form-heading">
+            <label for="email">Leave Email</label>
+            <input type="email" id="email" name="email" required aria-required="true" aria-describedby="emailHelp">
+            <p id="emailHelp">Please enter a valid email address.</p>
+            <input type="submit" id="submit" value="Submit" aria-label="Submit the contact form">
+        </form>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
